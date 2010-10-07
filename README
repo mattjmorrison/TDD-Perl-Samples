@@ -1,0 +1,5 @@
+These are examples of how to do TDD using Perl
+
+Dependencies:
+Test::Unit
+Test::Assert

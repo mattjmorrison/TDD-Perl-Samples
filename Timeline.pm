@@ -1,5 +1,4 @@
 package Timeline;
-use Data::Dumper;
 
 sub new {
 	return bless {messages => [],}, shift;

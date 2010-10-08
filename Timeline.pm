@@ -13,15 +13,12 @@ sub add_message {
 sub get_messages {
 	my $self = shift;
 
+	my @recent = reverse(@{$self->{messages}});
 	if (scalar @{$self->{messages}} > 10) {
-		my @recent = reverse(@{$self->{messages}});
 		@recent = @recent[0..9];
-		return \@recent;
 	}
-	else {
-		my @recent = reverse(@{$self->{messages}});
-		return \@recent
-	}
+
+	return \@recent;
 }
 
 1;

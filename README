@@ -5,7 +5,7 @@ Test::Unit
 Test::Assert
 Storable
 
-Guidelines for TDD:
+Guidelines for Unit Tests:
 1. should be atomic
 2. should be order independent 
 3. should be repeatable
@@ -13,3 +13,22 @@ Guidelines for TDD:
 5. should be intension revealing
 6. should be easy to set up
 7. should run fast
+
+
+Guidelines for TDD:
+
+1. Write a failing test
+	a. run all tests
+	b. make sure the new test fails
+	a. make sure the new test fails for the reason that you expected it to fail
+
+2. Write a little bit of code
+	a. run all the tests
+	b. if the test still fails, make sure it fails the way you expect and repeat #2
+
+3. Refactor
+	a. remove duplication (from both production code and from tests)
+	b. remove smells
+		i. http://www.codinghorror.com/blog/2006/05/code-smells.html
+		ii. http://en.wikipedia.org/wiki/Code_smell
+		iii. http://c2.com/xp/CodeSmell.html

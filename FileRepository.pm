@@ -14,7 +14,7 @@ sub save_messages {
 sub load_messages {
 	my $self = shift;
 	my $messages = eval {retrieve($self->{file})};
-	if (@!){
+	if ($@){
 		$messages = [];
 	}
 	return $messages;	

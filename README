@@ -1,6 +1,15 @@
-These are examples of how to do TDD using Perl
+This is an example Project developed in Perl using TDD
 
 Dependencies:
 Test::Unit
 Test::Assert
 Storable
+
+Guidelines for TDD:
+1. should be atomic
+2. should be order independent 
+3. should be repeatable
+4. should be isolated
+5. should be intension revealing
+6. should be easy to set up
+7. should run fast

@@ -2,7 +2,7 @@ package Tests::BlogTests;
 use Test::Assert qw(assert_deep_equals);
 use base qw(Test::Unit::TestCase);
 
-use MockRepository;
+use Tests::MockRepository;
 use Timeline;
 
 sub new {
